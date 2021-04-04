@@ -12,6 +12,8 @@ nav {
     min-height: 5vh;
     background-color: rgb(122, 0, 0);
     padding: 0 20px;
+    z-index: 90;
+    position: relative;
 }
 
 .textLogo {
@@ -76,9 +78,14 @@ nav {
 
 
 
+
 @media screen and (max-width: 768px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden; 
+    }
+
+    .title {
+        font-size: 1rem;
     }
 
     .nav-links {
